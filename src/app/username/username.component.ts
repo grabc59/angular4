@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './username.component.html',
   styleUrls: ['./username.component.css']
 })
+
 export class UsernameComponent implements OnInit {
   
   username = '';
