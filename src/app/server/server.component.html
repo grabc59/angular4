@@ -1,3 +1,8 @@
-<p> {{'Server'}} ID: {{ serverId }} is {{ getServerStatus() }} </p>    
-<app-warning></app-warning>
-<app-alert></app-alert>
+<p 
+    [ngStyle]="{'background-color': getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}"> 
+    {{'Server'}} ID: {{ serverId }} is {{ getServerStatus() }} 
+</p>    
+
+<!--<app-warning></app-warning>
+<app-alert></app-alert>-->
