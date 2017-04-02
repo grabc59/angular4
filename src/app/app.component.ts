@@ -20,14 +20,6 @@ export class AppComponent {
 
   onToggleSecretPTag(event) {
     this.toggleSecretPTagStatus = !this.toggleSecretPTagStatus;
-    // console.log(event.timeStamp);
     this.leClicksArray.push(event.timeStamp);
   }
-
-  // getBackgroundColor(index) {
-  //   if (index > 4) {
-
-  //   }
-  // }
-
 }
