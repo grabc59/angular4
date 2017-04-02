@@ -1,0 +1,16 @@
+<label>
+  What be-eth thy name?
+</label>
+<input 
+  type="text"
+  class="form-control"
+  [(ngModel)]="username">
+
+<button
+  class="btn btn-primary"
+  [disabled]="!username"
+  (click)="onSubmitUsername()">
+  Submit that shit
+</button>
+
+<p>{{ username }}</p>
