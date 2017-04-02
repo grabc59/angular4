@@ -7,7 +7,25 @@
           {{title}}
         </h3>
         
+        
+
+        <button
+          class="btn btn-primary"
+          (click)="onToggleSecretPTag($event)">
+          Display Details
+        </button>
+        <p *ngIf="toggleSecretPTagStatus">
+            Fool of a Took!
+        </p>
+        <p 
+        *ngFor="let click of leClicksArray; let i = index"
+        [ngStyle]="{backgroundColor: i > 3 ? 'blue' : 'white'}"
+        [ngClass]="{indexOverFive: i > 3}">
+          {{ click }}
+        </p>
+
         <hr>
+
         <app-username></app-username>
         <app-servers></app-servers>
         
