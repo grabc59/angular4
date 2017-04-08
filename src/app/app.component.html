@@ -1,5 +1,8 @@
 <div class="container">
-  <app-header></app-header>
-  <app-recipe></app-recipe>
-  <app-shopping-list></app-shopping-list>
+  <app-header 
+  (routeUpdate)="onRouteUpdate($event)">
+  </app-header>
+  
+  <app-recipe *ngIf="currentRoute === 'recipes'"></app-recipe>
+  <app-shopping-list *ngIf="currentRoute === 'shopping-list'"></app-shopping-list>
 </div>
